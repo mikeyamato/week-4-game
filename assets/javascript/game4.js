@@ -43,7 +43,7 @@ function startGame() {
 	// total = 0;
 
 
-	document.getElementById("numberToGuess").innerHTML = "Number to guess: " + randomNumber;
+	document.getElementById("numberToGuess").innerHTML = randomNumber;
 }
 
 
@@ -59,7 +59,7 @@ function tally() {
 			if (total === randomNumber) {
 				wins++;
 				alert("you chose wisely. play again.");
-				document.getElementById("win").innerHTML = wins + " wins";
+				document.getElementById("win").innerHTML = wins;
 				startGame();
 			} 
 
@@ -68,7 +68,7 @@ function tally() {
 			else if(total > randomNumber) { 
 				losses++;
 				alert("you chose poorly. play again.");
-				document.getElementById("loss").innerHTML = losses + " losses";
+				document.getElementById("loss").innerHTML = losses;
 				startGame();
 
 			}
@@ -83,7 +83,7 @@ function tally() {
 			if (total === randomNumber) {
 				wins++;
 				alert("you chose wisely. play again.");
-				document.getElementById("win").innerHTML = wins + " wins";
+				document.getElementById("win").innerHTML = wins;
 				startGame();
 			} 
 
@@ -92,7 +92,7 @@ function tally() {
 			else if(total > randomNumber) { 
 				losses++;
 				alert("you chose poorly. play again.");
-				document.getElementById("loss").innerHTML = losses + " losses";
+				document.getElementById("loss").innerHTML = losses;
 				startGame();
 			}
 		}
@@ -106,7 +106,7 @@ function tally() {
 			if (total === randomNumber) {
 				wins++;
 				alert("you chose wisely. play again.");
-				document.getElementById("win").innerHTML = wins + " wins";
+				document.getElementById("win").innerHTML = wins;
 				startGame();
 			} 
 
@@ -115,7 +115,7 @@ function tally() {
 			else if(total > randomNumber) { 
 				losses++;
 				alert("you chose poorly. play again.");
-				document.getElementById("loss").innerHTML = losses + " losses";
+				document.getElementById("loss").innerHTML = losses;
 				startGame();
 			}
 		}
@@ -129,7 +129,7 @@ function tally() {
 			if (total === randomNumber) {
 				wins++;
 				alert("you chose wisely. play again.");
-				document.getElementById("win").innerHTML = wins + " wins";
+				document.getElementById("win").innerHTML = wins;
 				startGame();
 			} 
 
@@ -138,7 +138,7 @@ function tally() {
 			else if(total > randomNumber) { 
 				losses++;
 				alert("you chose poorly. play again.");
-				document.getElementById("loss").innerHTML = losses + " losses";
+				document.getElementById("loss").innerHTML = losses;
 				startGame();
 			}
 		}
