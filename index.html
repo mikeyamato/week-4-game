@@ -3,9 +3,6 @@
 <head>
 	<title></title>
 
-	<!-- reset -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
 	<!-- mobile 1st -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,27 +12,57 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- reset -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
 	<!-- link CSS file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 
 </head>
 <body>
 	
 
+<div class="wrapper">
+	<div class="output">
+		<h2 id="numberToGuess">Number to guess: 0</h2>
+		<br>
+		<h2>Your number so far: <span id="guessedNumber">0</span></h2>
+		<br>
+		<h2 id="win">0 wins</h2>	
+		<br>
+		<h2 id="loss">0 loses</h2>
+		<br>
+	</div>
+</div>	
+
+	<!-- crystal image to click on -->
+	
+	<div id="crystal">
+
+		<img class="crystal1" src=http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg>
+		<img class="crystal2" src=http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg>
+		<img class="crystal3" src=http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg>
+		<img class="crystal4" src=http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg>
+	
+	</div>
 
 
 
-	<!-- link Js file -->
-	<script src="assets/javascript/game.js" type="text/javascript"></script>
 
-	<!-- jQuery -->
+	<!-- jQuery (place at bottom above /body) -->
 	<script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript (place at bottom above /body) -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- link Js file (place at bottom above /body) -->
+	<script src="assets/javascript/game4.js" type="text/javascript"></script>
+
 
 </body>
 </html>

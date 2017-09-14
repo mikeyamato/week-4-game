@@ -37,51 +37,57 @@ while(randomCrystalNumbers.length < 4) {  // until there are four random numbers
 console.log(randomCrystalNumbers);
 
 
+var randomNumber = 0;
 var total = 0;
-
 var wins = 0;
 var losses = 0;
 
 
-if(total === randomNumber) {
-	console.log("good job");
-	win++;
-} else if(total > randomNumber) { 
-	console.log("better luck next time");
-	losses++;
-}
 
+while (total < 100) {
+	$(document).ready(function(){
+		$(".crystal1").on("click", function() {
+			total += randomCrystalNumbers[0];     //why doesn't "total" update the global variable????
+			console.log(total);
+		});
+		$(".crystal2").on("click", function() {
+			total += randomCrystalNumbers[1];
+			console.log(total);
+		});
+		$(".crystal3").on("click", function() {
+			total += randomCrystalNumbers[2];
+			console.log(total);
+		});
+		$(".crystal4").on("click", function() {
+			total += randomCrystalNumbers[3];
+			console.log(total);
+		});
+	
 
-
-
-
-
-$(document).ready(function(){
-	$(".crystal1").on("click", function() {
-		total += randomCrystalNumbers[0];     //why doesn't "total" update the global variable????
-		console.log(total);
+	// if(total === randomNumber) {
+	// 	console.log("good job");
+	// 	win++;
+	// 	} else if(total > randomNumber) { 
+	// 		console.log("better luck next time");
+	// 		losses++;
+	// };
 	});
-	$(".crystal2").on("click", function() {
-		total += randomCrystalNumbers[1];
-		console.log(total);
-	});
-	$(".crystal3").on("click", function() {
-		total += randomCrystalNumbers[2];
-		console.log(total);
-	});
-	$(".crystal4").on("click", function() {
-		total += randomCrystalNumbers[3];
-		console.log(total);
-	});
-});
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 			
 				
- // // Here we created an on-click event that responds to button clicks of the crystal image.
- //  $(".crystal1").on("click", function() {
- //  	$(this).click();
- //    // Clicking the button triggers an alert message.
- //    alert("You clicked a crystal!");
-
- //  });					
 
 
 // if guessed correctly, player wins. win statement appears. win score increases by 1. game resets. 
